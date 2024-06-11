@@ -1,7 +1,9 @@
 -- Drop table if exists--
 DROP TABLE Combined_Streaming_Dataset;
 -- Drop table if exists--
-DROP TABLE "Ratings Summary";
+DROP TABLE "Ratings_Summary";
+-- Drop table if exists--
+DROP TABLE "Durations_Summary";
 
 --Create main table--
 Create Table Combined_Streaming_Dataset (
@@ -20,7 +22,7 @@ Create Table Combined_Streaming_Dataset (
 --view table--
 Select * FROM Combined_Streaming_Dataset;
 
---Create summary table--
+--Create ratings summary table--
 Create Table Ratings_Summary (
  	" " VARCHAR(10) NOT NULL,
 	Netflix dec NOT NULL,
@@ -32,4 +34,17 @@ Create Table Ratings_Summary (
 Alter Table Ratings_Summary
 RENAME COLUMN " " to "Rating Category";
 
+--view table--
 Select * FROM Ratings_Summary;
+
+--Create duration summary table--
+Create Table Durations_Summary (
+ 	"Season Number" INT NOT NULL,
+	"Netflix TV Duration" dec NULL,
+	"Hulu TV Duration" dec NULL,
+	"Amazon TV Duration" dec NULL,
+	"Disney TV Duration" dec NULL
+);
+
+--view table--
+Select * FROM Durations_Summary;
