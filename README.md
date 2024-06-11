@@ -13,9 +13,9 @@ We set out to engineer a database that will help users evaluate four of the majo
 
 
 User Instructions:
-Database Files: Load the data into PostgresSQL using the Schema_1.sql file. Populate the table using the .csv files located in the Database folder. Tables can be created in any order.
+All Database Files are located in the Resouces Folder: Load the data into PostgresSQL using the Postgres_Schema.sql file. Populate the three tables created by the schema using these .csv files: Combined_cleaned_data.csv, Ratings_Summary.csv, Durations_Summary.csv. Tables can be created in any order, but pay attention to the notes in the schema file. 
 
-Use the Plotly visuals in the Jupyiter notebook [NAME] to evaluate each plateform by toggling between the four services.
+Use the Plotly visuals in the Jupyiter notebook Combined_Analysis_File.ipynb to evaluate each platform by toggling between the four services.
 
 
 Data Processing
@@ -26,10 +26,19 @@ The ETL workflow can be summarized with the diagram below:
 
 Postgres was selected as our database over a noSQL database because of its ease of use, and the clean user interface of PGAdmin. The data stored in SQL is displayed in Jupyter Notebook using Pandas DataFrames and PLotly, which is an additional library that allows users to toggle data views. These three tools (SQL, Pandas, Plotly) allowed us to easily conntect multiple data platforms and engineer an analytical framework that can be explanded upon for deep analysis in the future.
 
-![Main SQL Dataset](/Images/Combined%20Dataset.png)
+![Combined Streaming Dataset](/Images/Combined%20Dataset.png)
 
-[ADD PLOTLY IMAGES]
 
+![Ratings Summary](/Images/Ratings.png)
+
+
+![Durations Summary](/Images/duration.png)
+
+
+
+Below are examples of Plotly visuals for the Duration evaluation. The user can select a different streaming service to see what platforms have the most TV shows by the number of seasons. Plotly visuals like the one below were created to evaluate genre, content ratings, and content age as well.
+
+![Plotly - TV Show Duration by Platform](/Images/Plotly_Duration.png)
 
 
 
