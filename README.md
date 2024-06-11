@@ -39,9 +39,9 @@ Postgres was selected as our database over a noSQL database because of its ease 
 
 
 
-Below are examples of Plotly visuals for the Duration evaluation. The user can select a different streaming service to see what platforms have the most TV shows by the number of seasons. Plotly visuals like the one below were created to evaluate genre, content ratings, and content age as well.
+Below are examples of Plotly visuals for the Ratings evaluation. The user can select a different streaming service to see what platforms have the most TV shows by content rating. Plotly visuals like the one below were created to evaluate genre, content durating (no. of seasons), and content production decade as well.
 
-![Plotly - TV Show Duration by Platform](/Images/Plotly_Duration.png)
+![Plotly - TV Show Content Ratings by Platform](/Images/Plotly%20Ratings%20.png)
 
 
 
