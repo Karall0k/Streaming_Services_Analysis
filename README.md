@@ -4,7 +4,8 @@
 
 by Joshua Turk, Malek Kheirddin, Karesse Lockard, Brian Morrissey
 
-Purpose
+Purpose:
+
 We set out to engineer a database that will help users evaluate four of the major streaming service platforms: Netflix, Amazon Prime, Hulu, and Disney+. Users of the Database can evaluate these platforms using Plotly to answer the following questions:
     •What is the genre breakdown of each platform?
     •Which platform has the most/least content?
@@ -13,12 +14,14 @@ We set out to engineer a database that will help users evaluate four of the majo
 
 
 User Instructions:
+
 All Database Files are located in the Resouces Folder: Load the data into PostgresSQL using the Postgres_Schema.sql file. Populate the three tables created by the schema using these .csv files: Combined_cleaned_data.csv, Ratings_Summary.csv, Durations_Summary.csv. Tables can be created in any order, but pay attention to the notes in the schema file. 
 
 Use the Plotly visuals in the Jupyiter notebook Combined_Analysis_File.ipynb to evaluate each platform by toggling between the four services.
 
 
-Data Processing
+Data Processing:
+
 The ETL workflow can be summarized with the diagram below:
 
 ![alt text](/Images/ETL.png)
@@ -43,7 +46,8 @@ Below are examples of Plotly visuals for the Duration evaluation. The user can s
 
 
 
-Ethical Considerations
+Ethical Considerations:
+
 The datasets used were sourced from Kaggle (links below) and represent a snapshot in time for the four streaming services. The streaming services were not preferentially selected for evaluation to favor any streaming service over another. Streaming services included in this analysis were based on the data that was made available in a comparable format. Some of the streaming services have more content than others and this may be reflected in the final summary tables. The datasets contain content ratings that vary by service. For easier viewing, we organized these ratings into four general categories shown below. It is ultimately the user's responsibility to determine the approriateness of the content they select for the viewing audiance.
 
     Kids    ['PG', 'TV-PG', '7+', 'TV-Y7', 'TV-Y7-FV'] 
@@ -55,6 +59,7 @@ The datasets used were sourced from Kaggle (links below) and represent a snapsho
 
 
 Sources for Datasets used to create this Database:
+
 https://www.kaggle.com/datasets/shivamb/netflix-shows
 https://www.kaggle.com/datasets/shivamb/hulu-movies-and-tv-shows
 https://www.kaggle.com/datasets/shivamb/disney-movies-and-tv-shows
