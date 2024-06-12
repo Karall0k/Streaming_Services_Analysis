@@ -20,6 +20,13 @@ All Database Files are located in the Resouces Folder: Load the data into Postgr
 Use the Plotly visuals in the Jupyiter notebook Combined_Analysis_File.ipynb to evaluate each platform by toggling between the four services.
 Make sure to have these modules installed prior to runing the notebook:
 
+pip install psycopg2
+pip install jupysql 
+
+I do not believe the next package is necessary, but if you are running an older version of SQLAlchemy you may need it. If you get an error after installing the above two packages, try running this one and the code should work:
+
+pip install ipython-sql
+
 Data Processing:
 
 The ETL workflow can be summarized with the diagram below:
