@@ -18,7 +18,7 @@ User Instructions:
 All Database Files are located in the Resouces Folder: Load the data into PostgresSQL using the Postgres_Schema.sql file. Populate the three tables created by the schema using these .csv files: Combined_cleaned_data.csv, Ratings_Summary.csv, Durations_Summary.csv. Tables can be created in any order, but pay attention to the notes in the schema file. 
 
 Use the Plotly visuals in the Jupyiter notebook Combined_Analysis_File.ipynb to evaluate each platform by toggling between the four services.
-Make sure to have these modules installed prior to runing the notebook:
+Make sure to have these modules installed prior to running the notebook:
 
 pip install psycopg2
 
